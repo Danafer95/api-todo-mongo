@@ -83,7 +83,7 @@ servidor.delete("/tareas/borrar/:id([0-9a-f]{24})", async (peticion,respuesta) =
 
 servidor.use((peticion,respuesta) => {
     respuesta.status(404);
-    respuesta.json({ error : "recurso no encontrado" });
+    respuesta.json({ error : "recurso no encontrado en plataforma" });
 });
 
 servidor.use((error,peticion,respuesta,siguiente) => {
